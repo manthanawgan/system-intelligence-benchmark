@@ -26,7 +26,7 @@ class GenerationTask:
             self.extra_info = {}
 
 
-@dataclass  
+@dataclass
 class GenerationOutput:
     """Output from TLA+ generation method."""
     tla_specification: str
@@ -35,6 +35,11 @@ class GenerationOutput:
     metadata: Dict[str, Any]  # Method-specific metadata
     success: bool = True
     error_message: str = None
+
+    @property
+    def generated_text(self) -> str:
+        """Alias for tla_specification for backward compatibility."""
+        return self.tla_specification
 
 
 class TLAGenerationMethod(ABC):
