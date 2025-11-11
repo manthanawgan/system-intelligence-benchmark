@@ -25,3 +25,4 @@ outputs/
 # Repository caches downloaded during tasks
 sysmobench_core/data/repositories/
 sysmobench_core/lib
+sysmobench_core/output
