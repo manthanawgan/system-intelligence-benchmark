@@ -86,7 +86,7 @@ def run_evaluation(task, method, model_name, max_iterations=3):
             model_obj = get_configured_model(model_name)
             correction = method._generate_correction(task, current_spec, errors, model_obj)
             if correction.success:
-                current_spec = correction.generated_text
+                current_spec = correction.tla_specification
                 current_gen = GenerationResult(current_spec, correction.metadata, time.time(), True)
                 logger.info(f"  ✓ Corrected for iteration {i+1}")
 
