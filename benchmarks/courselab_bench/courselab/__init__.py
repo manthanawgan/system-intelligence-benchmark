@@ -1,3 +1,5 @@
+from importlib.metadata import version
+
 from courselab.courselab import courselab
 from courselab.dataset import load_dataset, load_courses_metadata
 from courselab.scorer import lab_scorer
@@ -11,4 +13,4 @@ __all__ = [
     "lab_agent",
 ]
 
-__version__ = "0.1.0"
+__version__ = version("courselab-bench")

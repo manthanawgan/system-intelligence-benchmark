@@ -1,3 +1,5 @@
+from importlib.metadata import version
+
 from .courseexam import courseexam
 from .dataset import load_dataset, load_exam_metadata
 from .metrics import (
@@ -17,4 +19,4 @@ __all__ = [
     "total_points_possible",
 ]
 
-__version__ = "0.1.0"
+__version__ = version("courseexam-bench")

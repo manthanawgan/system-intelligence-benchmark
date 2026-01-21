@@ -1,4 +1,6 @@
+from importlib.metadata import version
 from pathlib import Path
+
 from inspect_ai import Task, task
 from inspect_ai.agent import Agent
 
@@ -26,4 +28,6 @@ def courselab(
             "num_courses": len(metadata["courses"]),
             "courses": metadata["courses"],
         },
+        name="courselab",
+        version=version("courselab-bench"),
     )

@@ -1,3 +1,5 @@
+from importlib.metadata import version
+
 from inspect_ai import Task, task
 from inspect_ai.model import GenerateConfig
 from inspect_ai.solver import (
@@ -69,5 +71,5 @@ def courseexam(
         config=GenerateConfig(max_tokens=max_tokens, temperature=0.0),
         metadata=exam_info,
         name="courseexam",
-        version="0.1.0",
+        version=version("courseexam-bench"),
     )
