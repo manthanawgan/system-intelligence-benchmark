@@ -2,6 +2,8 @@
 
 A benchmark for evaluating AI agents on systems course exam questions. This benchmark tests AI agents' ability to answer technical exam questions covering topics like operating systems, distributed systems, databases, and networking.
 
+> Leaderboard hosted on HuggingFace Spaces: [sys-intelligence/leaderboard](https://huggingface.co/spaces/sys-intelligence/leaderboard)
+
 ## What is this benchmark?
 
 This benchmark is designed for standalone exam questions similar to traditional paper exams. Think of this as a closed-book exam with an optional cheatsheet where students solve questions using only pen and paper (no code execution, no file system access, no web browsing, or any other agent actions).

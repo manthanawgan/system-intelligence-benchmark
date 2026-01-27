@@ -2,6 +2,8 @@
 
 Evaluate AI agents on systems programming lab assignments.
 
+> Leaderboard hosted on HuggingFace Spaces: [sys-intelligence/leaderboard](https://huggingface.co/spaces/sys-intelligence/leaderboard)
+
 ```bash
 pip install -e .
 
